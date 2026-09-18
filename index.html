@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Tela inicial -->
+        <section id="inicio" class="tela">
+            <div class="camera">📸</div>
+
+            <h1>Desafio da Fotografia</h1>
+
+            <p>
+                Prepare-se para testar seus conhecimentos sobre fotografia!
+                Você terá 8 perguntas sobre câmera, iluminação,
+                composição e técnicas fotográficas.
+            </p>
+
+            <button id="btnIniciar">Iniciar</button>
+        </section>
+
+        <!-- Tela do jogo -->
+        <section id="jogo" class="tela escondido">
+
+            <p id="nomeJogador"></p>
+
+            <div class="progresso">
+                Pergunta <span id="numeroPergunta">1</span> de 8
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas" class="alternativas"></div>
+
+        </section>
+
+        <!-- Tela final -->
+        <section id="resultado" class="tela escondido">
+
+            <div class="camera">🏆</div>
+
+            <h1>Missão concluída!</h1>
+
+            <p id="mensagemResultado"></p>
+
+            <p class="pontuacao">
+                Você acertou <span id="pontuacao">0</span> de 8!
+            </p>
+
+            <button id="btnJogarNovamente">
+                Jogar Novamente
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
